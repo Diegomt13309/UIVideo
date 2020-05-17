@@ -12,12 +12,11 @@ import android.widget.ImageButton;
 import android.widget.RadioButton;
 import android.widget.Switch;
 import android.widget.TableLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
-
-
 
     private  Button BtnPerro1;
     private ImageButton BtnGato1;
@@ -27,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private Button enviar;
     private Switch switchbtn;
     private TableLayout tabl;
+    private TextView textOp;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         enviar =(Button) findViewById(R.id.enviar);
         switchbtn= (Switch) findViewById(R.id.switchbtn);
         tabl = (TableLayout) findViewById(R.id.tabla);
+        textOp =(TextView) findViewById(R.id.textOP);
 
 
         BtnPerro1.setOnClickListener(new View.OnClickListener() {
@@ -92,12 +93,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-                    switchbtn.setBackgroundColor(Color.WHITE);
+                    tabl.setBackgroundColor(Color.WHITE);
                     switchbtn.setTextColor(Color.BLACK);
+                    radioGato.setTextColor(Color.BLACK);
+                    radioPerro.setTextColor(Color.BLACK);
+                    textOp.setTextColor(Color.BLACK);
                 }
                 else{
                     tabl.setBackgroundColor(Color.BLACK);
                     switchbtn.setTextColor(Color.WHITE);
+                    radioGato.setTextColor(Color.WHITE);
+                    radioPerro.setTextColor(Color.WHITE);
+                    textOp.setTextColor(Color.WHITE);
+
                 }
             }
         });

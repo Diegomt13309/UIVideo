@@ -12,7 +12,7 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
 
@@ -31,7 +31,7 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="10dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
 
@@ -41,7 +41,7 @@
                 android:orientation="horizontal">
                 <ImageView
                     android:layout_width="200dp"
-                    android:layout_height="200dp"
+                    android:layout_height="160dp"
                     android:src="@drawable/cat"
                     android:layout_marginLeft="60dp"
                     />
@@ -51,7 +51,7 @@
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
 
@@ -67,23 +67,27 @@
                     android:id="@+id/lindo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Lindo"/>
+                    android:text="Lindo"
+                    android:onClick="onCheckboxClicked"/>
 
                 <CheckBox
                     android:id="@+id/curioso"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Curioso"/>
+                    android:text="Curioso"
+                    android:onClick="onCheckboxClicked"/>
                 <CheckBox
                     android:id="@+id/mesquino"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mesquino"/>
+                    android:text="Mesquino"
+                    android:onClick="onCheckboxClicked"/>
                 <CheckBox
                     android:id="@+id/gato"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Gato"/>
+                    android:text="Gato"
+                    android:onClick="onCheckboxClicked"/>
 
             </LinearLayout>
         </TableRow>
@@ -113,7 +117,7 @@
                             android:id="@+id/subMenu"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            app:fab_label="Sub Menú"
+                            app:fab_label="Volver al Main"
                             android:src="@drawable/sub_menu"
                             android:onClick="clickSubMenu"
                             />
